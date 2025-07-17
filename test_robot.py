@@ -17,7 +17,7 @@ class TestRobotMovement(unittest.TestCase):
     def test_collision(self):
         self.terrain.move_robot(1, "E3")
         self.terrain.move_robot(2, "E4")
-        self.assertEqual(self.terrain.get_robot_position(2), (0, 2))  # Stops before (0,3)
+        self.assertEqual(self.terrain.get_robot_position(2), (0, 2))
 
 if __name__ == '__main__':
     unittest.main()
